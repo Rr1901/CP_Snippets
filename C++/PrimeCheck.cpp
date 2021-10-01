@@ -1,16 +1,9 @@
-/* 
-------------------------------------------------------------------------------------------------
-USERNAME: RASESH2005
-DESCRIPTION: THIS PROGRAM CHECKS IF A NUMBER IS PRIME OR NOT
-DATE: 1/10/2021
-------------------------------------------------------------------------------------------------
-*/
-#include <bits/stdc++.h>
-
+#include "bits/stdc++.h"
 using namespace std;
-
-//SNIPPET
-bool isPrime(int n) 
+#define int long long int
+#define IOS ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+//Author Rahul Sannigrahi
+bool isprime(int n) 
 { 
     if (n <= 1)  return false; 
     if (n <= 3)  return true; 
@@ -23,11 +16,14 @@ bool isPrime(int n)
   
     return true; 
 } 
-int main()
+
+ 
+int32_t main()
 {
-    //APPLICATION
-    bool result = isPrime(24498757);
-    cout << result << endl;
-    cout << (result ? "Prime" : "Not A Prime") << endl;
+    IOS
+     bool result = isprime(24498757);
+    //endl is slower than "\n"
+    cout << (result ? "Prime" : "Not A Prime") << "\n";
     return 0;
 }
+
